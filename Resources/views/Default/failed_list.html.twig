@@ -37,7 +37,7 @@
 
                         <div class="hide" id="{{ job.id }}_stack">
                             <p>
-                                {{ job.backtrace | join('<br>') }}
+                                <pre>{{ job.backtrace | join("\n") }}</pre>
                             </p>
                         </div>
                         <div class="hide" id="{{ job.id }}_args">
